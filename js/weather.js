@@ -8,7 +8,7 @@ const apikey = "79466eda1a9642b68ec91944250702";
 button.addEventListener("click", async () => {
   const value = input.value;
   const result = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${value}`
+    `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${value}`
   );
   const data = await result.json();
   console.log(data);
