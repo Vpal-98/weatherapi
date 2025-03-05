@@ -1,0 +1,82 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(/img/weather.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background: #ff7eb3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #ff4e91;
+}
+
+div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 330px;
+}
+
+h5,
+p {
+  margin: 10px 0;
+  color: #ffffff;
+  padding: 10px 10px;
+  background-color: #ff7eb3;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h5:hover {
+  background-color: #ff4e91;
+}
+
+p:hover {
+  background-color: #ff4e91;
+}
